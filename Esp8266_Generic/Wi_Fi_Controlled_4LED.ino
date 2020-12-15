@@ -31,7 +31,7 @@ void setup()
     esp8266Data("AT+CWMODE=1\r\n", 5000, DEBUG); //Set station mode Operation
   
     /*Change the following command as per your requirement i.e. enter the 
-    SSID and Password of your WiFi Network in the command.*/
+    SSID and Password of your WiFi Network in the command.*/ 
     
     esp8266Data("AT+CWJAP=\"<Add SSID Name>\",\"<Add SSID Password>\"\r\n", 5000, DEBUG);//Enter your WiFi network's SSID and Password.
                                    
