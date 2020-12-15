@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style >
+      
+      body
+      {
+        background-color: lavender;
+      }
+
+    </style>
+
+  </head>
+<body>
+
+    {% block content %}
+    {% endblock %}
+    
+</body>
+
+</html>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename ='js/jquery.js')}}"></script>
+
+    -->
+
+<!--
+<script>
+$.ajaxSetup({timeout:1000});
+btn = document.querySelector('button[class="robot"]');
+btn1 = document.querySelector('button[class="robot1"]');
+
+btn2 = document.querySelector('button[class="robot2"]');
+btn3 = document.querySelector('button[class="robot3"]');
+btn4 = document.querySelector('button[class="robot4"]');
+
+
+btn.addEventListener('click', led0);
+btn1.addEventListener('click', led1);
+btn2.addEventListener('click', led2);
+btn3.addEventListener('click', led3);
+btn4.addEventListener('click', led4);
+
+function led0()
+{
+  var val1 = btn.id;
+  
+  //ArduinoVar = "http://" + "103.51.23.62"+ ":80/";
+  $.get( "http://" + "192.168.43.10"+ ":80/", {robot:val1}) ;
+  {Connection: close};
+}
+function led1()
+{
+  var val1 = btn1.id;
+  
+  //ArduinoVar = "http://" + "103.51.23.62"+ ":80/";
+  $.get( "http://" + "192.168.43.10"+ ":80/", {robot:val1}) ;
+  {Connection: close};
+}
+
+function led2()
+{
+  var val1 = btn2.id;
+  
+//  ArduinoVar = "http://" + "103.51.23.62"+ ":80/";
+  $.get( "http://" + "192.168.43.10"+ ":80/", {robot:val1}) ;
+  {Connection: close};
+}
+
+function led3()
+{
+  var val1 = btn3.id;
+  
+//  ArduinoVar = "http://" + "103.51.23.62"+ ":80/";
+  $.get( "http://" + "192.168.43.10"+ ":80/", {robot:val1}) ;
+  {Connection: close};
+}
+
+function led4()
+{
+  var val1 = btn4.id;
+  
+//  ArduinoVar = "http://" + "103.51.23.62"+ ":80/";
+  $.get( "http://" + "192.168.43.10"+ ":80/", {robot:val1}) ;
+  {Connection: close};
+}
+</script>
+
+!-->
+
