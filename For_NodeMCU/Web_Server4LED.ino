@@ -31,7 +31,7 @@ unsigned long previousTime = 0;
 
 // Define timeout time in milliseconds (example: 2000ms = 2s)
 const long timeoutTime = 2000;
-
+ 
 // Set your static ip address
 // In Windows, type = ipconfig, In Linux, type = ifconfig - to know about your private IP address and Gateway
 IPAddress local_ip (192,168,43,11);
