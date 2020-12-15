@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+	WiFi Controlled Bot
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+    <h1 align="center"> <b> <font color="red"> WI-FI CONTROLLED CAR </b> </h2>
+
+    <div>
+     <p align="center"><a class="btn btn-primary" href="http://192.168.43.10:80/?robot=RGT" role="button"><font size="6">Forward</a>
+     <a class="btn btn-primary" href="http://192.168.43.10:80/?robot=LFT" role="button"> <font size="6">Backward</a></p>
+     
+     </div>
+     
+     <div>
+     <p align="center"><a class="btn btn-primary" href="http://192.168.43.10:80/?robot=REV" role="button"><font size="6">Left</a>
+     <a class="btn btn-primary" href="http://192.168.43.10:80/?robot=FWD" role="button"><font size="6">Right</a> </p>
+     
+     </div>
+
+     <div>
+     <p align="center"><a class="btn btn-primary" href="http://192.168.43.10:80/?robot=STP" role="button"><font size="6">Stop</a> </p>
+     </div>
+
+     <!--
+     <form action="#">
+    
+    <p align="Right"><font size="6"><input style = "background-color: green; background-position: center;" type="submit" value="OK" /> </p>
+
+    </form>
+    !-->
+
+    <div align="Left">
+        
+        <h3> <font color="blue"> Team Members :</h3>
+        <p><font size="4"> <font color = "black">1. Ayush Rao</p>
+        <p><font size="4"> 2. Bhavya Vyas</p>
+        <p><font size="4"> 3. Chetan Soni</p>
+
+    </div>
+
+
+
+
+
+{% endblock %}
